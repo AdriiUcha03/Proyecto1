@@ -7,9 +7,10 @@ hay muchos tipos de páginas web según su funcionalidad y uso, por lo tanto, te
 que podemos ofrecer un alto rendimiento y personalización.
 
 ### ¿Qué es la arquitectura de las Aplicaciones Web?
-La arquitectura de las aplicaciones web es la forma en la que interactuan entre sí los diferentes componentes de una aplicación web. Puede ser
-tan sencillo como definir una relación entre un cliente y un servidor, o ser mucho más complejo con unos muchos servidores
-backend en contenedores, equilibradores de carga, pasarelas API y frontends de una sola página orientados al usuario.
+La arquitectura de las aplicaciones web es la forma en la que interactuan entre sí los diferentes componentes de una 
+aplicación web. Puede ser tan sencillo como definir una relación entre un cliente y un servidor, o ser mucho más 
+complejo con unos muchos servidores backend en contenedores, equilibradores de carga, pasarelas API y frontends de una 
+sola página orientados al usuario.
 
 La forma en la que diseñamos una aplicación web es clave en su usabilidad y también en la optimización de sus costes.
 
@@ -18,11 +19,15 @@ La forma en la que diseñamos una aplicación web es clave en su usabilidad y ta
 
 ## Modelos de Programación en Entornos Cliente/Servidor:
 
-La arquitectura de las aplicaciones web define cómo se estructuran los componentes de una aplicacion que se basa en la web, las
-arquitecturas son muy específicas basándonos en el propósito de la aplicación web. Utilizar correctamente una arquitectura web 
-nos puede dar ciertos beneficios:
-- **Un Desarrollo Organizado;** ya que así podemos aislar componentes según sea necesario, y puedes elegir una estructura adecuada para cada módulo que y componentes que hagas según sea necesario.
-- **Una mejor Gestión del Código;** dividir la aplicación por módulos y establecer canalizaciones personalizadas son necesarias para un desarrollo fluido de la aplicación, además de que siempre es más fácil después modificar cosas cuando todo está ordenado, este combinado con una buena estrategia de control de versiónes puede ser muy util para trabajar y desarrollar la página con mucha más comodidad o en paralelo con más compañeros.
+La arquitectura de las aplicaciones web define cómo se estructuran los componentes de una aplicacion que se basa en la 
+web, las arquitecturas son muy específicas basándonos en el propósito de la aplicación web. Utilizar correctamente una 
+arquitectura web nos puede dar ciertos beneficios.
+- **Un Desarrollo Organizado;** ya que así podemos aislar componentes según sea necesario, y puedes elegir una estructura 
+adecuada para cada módulo que y componentes que hagas según sea necesario.
+- **Una mejor Gestión del Código;** dividir la aplicación por módulos y establecer canalizaciones personalizadas son 
+necesarias para un desarrollo fluido de la aplicación, además de que siempre es más fácil después modificar cosas cuando 
+todo está ordenado, este combinado con una buena estrategia de control de versiónes puede ser muy util para trabajar y 
+desarrollar la página con mucha más comodidad o en paralelo con más compañeros.
 - **Una mejor Seguridad;** la mayoría en las arquitecturas tienen en cuenta la seguridad al estructurar los componentes.
 
 ---
@@ -41,8 +46,8 @@ ser difíciles de optimizar para el SEO.
 Algunos de sus usos son aplicaciones como **Gmail, Facebook o GitHub** 
 
 ### *Arquitectura de Renderizado del Lado del Servidor*
-En la arquitectura SSR, las páginas web del frontend se renderizan en un servidor backend después de ser solicitadas por el usuario, esto 
-para reducir la carga del cliente, ya que recibe una página web estática de *HTML, CSS y JS*.
+En la arquitectura SSR, las páginas web del frontend se renderizan en un servidor backend después de ser solicitadas por
+el usuario, esto para reducir la carga del cliente, ya que recibe una página web estática de *HTML, CSS y JS*.
 Estas son populares entre los blogs y sitios web de comercio electrónico, porque la gestión de enlaces y el SEO son bastante sencillos, además
 de tener un tiempo de respuesta en carga bastante rapido, porque el cliente no tiene que cargar nada.
 
@@ -78,24 +83,26 @@ por lo que puede ser complicada para el mantenimiento.
 Algunas aplicaciones que utilizan esta estructura son **Amazon(AWS), Google Maps, Spotify**
 
 ### *Arquitectura de Microsevicios*
-Esta fue diseñada para resolver los problemas de la Arquitectura Orientada a Servicios, estas son más modulares y encajan entre sí para construir una aplicación
-web, son pequeñas y con un contexto limitado, esta es la mejor estructura para aplicaciones que pretenden llevar a muchos usuarios, 
-ya que son escalables y fácil de mantener, para proyectos pequeños puede requerir demasiado esfuerzo de mantenimiento.
+Esta fue diseñada para resolver los problemas de la Arquitectura Orientada a Servicios, estas son más modulares y 
+encajan entre sí para construir una aplicación web, son pequeñas y con un contexto limitado, esta es la mejor estructura 
+para aplicaciones que pretenden llevar a muchos usuarios, ya que son escalables y fácil de mantener, para proyectos 
+pequeños puede requerir demasiado esfuerzo de mantenimiento.
 
 ![TUX](https://learn.microsoft.com/es-es/azure/architecture/includes/images/microservices-logical.png)
 
 Algunas aplicaciones como **Linkedin, SoundCloud, Zuul(Servicio de Netflix)** utilizan esta estructura.
 
 ### *Arquitectura sin Servidor*
-Esta arquitectura se centra en que tu aplicación se base en términos de funciones que debe realizar, son funciones que se invocan según la 
-llegada de las solicitudes, estas arquitecturas no permanecen en funcionamiento todo el tiempo, se comportan como lo harían
-las funciones de un programa según lo que acciones reacciona, reduce los costes de mantenimiento 
-y son fácil de escalar sin mucho esfuerzo, pero es difícil llevar a cabo tareas de larga duración utilizando estos componentes.
+Esta arquitectura se centra en que tu aplicación se base en términos de funciones que debe realizar, son funciones que 
+se invocan según la llegada de las solicitudes, estas arquitecturas no permanecen en funcionamiento todo el tiempo, se 
+comportan como lo harían las funciones de un programa según lo que acciones reacciona, reduce los costes de mantenimiento 
+y son fácil de escalar sin mucho esfuerzo, pero es difícil llevar a cabo tareas de larga duración utilizando estos 
+componentes.
 
 ![TUX](https://learn.microsoft.com/es-es/azure/architecture/serverless-quest/images/mobile-app-backends.png)
 
-Algunos de los usos de esta arquitectura generalmente son en **aplicaciones de automatización, aplicaciones de backend y móviles...** Microsoft ofrece un servicio
-llamado **Azure Functions con su API** para crear páginas sin servidor.
+Algunos de los usos de esta arquitectura generalmente son en **aplicaciones de automatización, aplicaciones de backend 
+y móviles...** Microsoft ofrece un servicio llamado **Azure Functions con su API** para crear páginas sin servidor.
 
 ---
 
@@ -179,27 +186,20 @@ modificaciones que se vayan haciendo.
 
 Vamos a ver algunos lenguajes de programación conocidos de Entorno Cliente:
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
-
 ### JavaScript
 
 JavaScript es un lenguaje de programación ligero, un lenguaje interpretado, más conocido como lenguaje de scripting para
 páginas web, también usado en muchos entornos fueras del navegador como con en Node.js, Apache CouchDB y Adobe Acrobat, 
 este es orientado a objetos.
 
-Su estándar es [ECMAScript](https://developer.mozilla.org/es/docs/conflicting/Web/JavaScript/JavaScript_technologies_overview).
+Aplicaciones como Gmail, Netflix, Facebook... están desarrolladas con JavaScript.
+
+Su estándar es [ECMAScript](https://developer.mozilla.org/es/docs/conflicting/Web/JavaScript/JavaScript_technologies_overview)
+
 Es importante no confundir Java con JavaScript son las dos registradas por Oracle en muchos paises, pero son dos lenguajes 
 muy diferentes.
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
-  </div>
-</div>
-
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+![TUC](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png)
 
 ### TypeScript
 
@@ -214,15 +214,9 @@ es válido en TypeScript.
 
 Este es bastante recomendable para proyectos grandes, ya que nos facilita mucho a la hora de programar.
 
+TypeScript se utiliza para todo en general, desarrollo web, de aplicaciones móviles, juegos, servidores ...
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="Type Script">
-  </div>
-</div>
-
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+![TUC](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png)
 
 ### jQuery
 
@@ -234,16 +228,11 @@ Esta nos facilita mucho la navegación por un documento y a seleccionar elemento
 a los desarrolladores a la hora de por desarrollar en menos código. Una alternativa a jQuery es Angular JS(Para creación 
 de páginas SPA).
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnOERRdJZSEYeeGJ1s0ReOwaWV0iC2Ra1faqhFZyp12KiFbIYG6REl3a7bQWy8CObCvc&usqp=CAU" alt="jQuery">
-  </div>
-</div>
+Este es muy útil y usa en la manipulación del DOM y el manejo de eventos, animaciones y efectos.
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+![TUC](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnOERRdJZSEYeeGJ1s0ReOwaWV0iC2Ra1faqhFZyp12KiFbIYG6REl3a7bQWy8CObCvc&usqp=CAU)
 
-### Angular
+### Angular.JS
 
 Angular es un framework mantenido por Google, que sirve para desarrollar aplicaciones web de estilo SPA o de tipo
 web progresivas PWA, sirve para tanto móvil como ordenador.
@@ -254,59 +243,65 @@ Su nombre proviene de un concepto que se utiliza en HTML "**< >**", esta usa un 
 para una mejor organización en el desarrollo web, tiene facilidad de enlace de datos, además nos brinda una buena 
 optimización de rendimiento y de SEO y muchas más cosas.
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt="Angular">
-  </div>
-</div>
+![TUC](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png)
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+### React.JS
 
-### React
+React es otra biblioteca de JavaScript que utiliza para hacer interfaces de usuario, todas las aplicaciones de react se componen
+de componentes reutilizables que forman la interfaz del usuario, el poder reutilizar dicho código nos puede facilitar 
+a la hora de hacer una web, ya que solo tenemos que ponerlo donde nos haga falta y ya.
 
+La sintaxis utilizada para construir aplicaciones con React se llama JSX(JavaScript XML), una extensión 
+de JavaScript, gracias ello podemos combinar la lógica interfaz de usuario con JavaScript de una manera única
 
+El uso de JSX no es obligatorio en React, pero facilita mucho su uso.
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="" alt="Type Script">
-  </div>
-</div>
-
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+![TUC](https://www.google.com/search?q=react&sca_esv=567894573&rlz=1C1YTUH_esES1076ES1076&sxsrf=AM9HkKkC3XikRJq-GnBV44z_BhTDzzQZ7w:1695504387023&tbm=isch&source=iu&ictx=1&vet=1&fir=4fP0joQQKRm5dM%252Cf37ex3LPb9a9oM%252C%252Fm%252F012l1vxv%253BVSkyWs8tDmynMM%252ClWgQ8RSs-vpqzM%252C_%253B_QvrPoNmxytTeM%252CJL3zwcFL7TH6BM%252C_%253BeRJuR9ugQmePkM%252C_SU9oiSMtPBR-M%252C_%253BX_mEpETNZWn7-M%252CmM1BU1-EasHt2M%252C_&usg=AI4_-kSwSIgEazUH3ur1C6l5Ibu6n2d9Aw&sa=X&ved=2ahUKEwj6k9CF1sGBAxWKXaQEHSecBPAQ_B16BAhJEAE#imgrc=4fP0joQQKRm5dM)
 
 ### Node.js
 
+Node es una plataforma de ejecución de JavaScript de propósito general, con ella puedes ejecutar JavaScript
+fuera del navegador y crear programas de consola servicios web, interfaces gráficas y mucho más, básicamente con ella
+podemos sacar JavaScript del entorno cliente en navegadores y darle otra utilidad diferente a la habitual.
 
+Por decirle de alguna forma, se puede decir que Node.js es un JavaScript sacado del contexto de los navegadores web
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="" alt="Type Script">
-  </div>
-</div>
+Su uso más habitual es en el desarrollo de servicios web.
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+![TUC](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.muylinux.com%2Fwp-content%2Fuploads%2F2022%2F04%2Fnodejs.png&tbnid=0cR72ir89_N2EM&vet=10CBAQxiAoA2oXChMIiJyeltnBgQMVAAAAAB0AAAAAEAY..i&imgrefurl=https%3A%2F%2Fwww.muylinux.com%2F2022%2F04%2F27%2Fnodejs-18%2F&docid=Gkm0dcMeylemdM&w=1200&h=720&itg=1&q=node%20js&ved=0CBAQxiAoA2oXChMIiJyeltnBgQMVAAAAAB0AAAAAEAY)
 
-### PHP
+## Características de los Lenguajes de Script. Ventajas y Desventajas
 
+Los lenguajes de script tienen una serie de características:
 
+- Son lenguajes interpretados.
+- No necesitan declaración de variables como los tradicionales.
+- Utilizan instrucciones para funcionar
+- Su código es simple, los scripts pueden verse complicados, pero realmente son muchos trozos de código pequeño que se 
+unen y forman uno más grande.
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="" alt="Type Script">
-  </div>
-</div>
+Estos son muy utiles tanto para programadores de software como desarrolladores web.
 
-<div style="display: flex; align-items: center;">
-  <div style="flex: 1;">
+Las diferencias entre los lenguajes de scripting y los de compilación son las siguientes:
+- Los lenguajes de scripting son específicos para una plataforma, en cambio, los tradicionales funcionan en cualquiera generalmente.
+- El código de los lenguajes de scripting es interpretado se va interpretando sobre la marcha
+el tradicional es compilado primero se tiene que compilar no dar error y después ejecutarse.
+- Debido a dicha diferencia de implementación de código generalmente suelen ser más rápidos los lenguajes
+de scripting.
+- Los lenguajes de programación son generalmente más extensos y complejos que los de scripting, por muy largo
+que puedas llegar a ver un script.
+- Con las aplicaciones de scripting no es posible crear aplicaciones de escritorio y móviles como con los lenguajes
+tradicionales.
 
-### Swift
+En resumen:
+Claro, aquí tienes la información en una tabla Markdown:
 
+| Lenguajes de scripting                | Lenguajes de programación            |
+|---------------------------------------|--------------------------------------|
+| Específicos de plataforma             | Independientes de la plataforma      |
+| (Mayoritariamente) interpretado       | Compilado                            |
+| Más lento en tiempo de ejecución      | Más rápido en tiempo de ejecución    |
+| Menos intensivo en código             | Más intensivo en código              |
+| Crea aplicaciones como parte de un stack | Crea aplicaciones independientes     |
 
-</div>
-  <div style="flex: 1;margin: 100px">
-    <img src="" alt="Type Script">
-  </div>
-</div>
+## Tecnologías y Lenguajes Asociados. Integración del Código con las Etiquetas HTML:
