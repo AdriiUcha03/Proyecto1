@@ -306,7 +306,7 @@ Claro, aquí tienes la información en una tabla Markdown:
 
 ## Tecnologías y Lenguajes Asociados. Integración del Código con las Etiquetas HTML:
 
-# HTML
+### HTML
 
 El Lenguaje de Marcas de Hipertexto, es el componente más basico de las webs, este define el significado y la estructura
 del contenido que se va a añadir a la web.
@@ -320,11 +320,11 @@ famosas etiquetas **< >**, que ya comentamos anteriormente.
 
 Actualmente, el último estándar de HTML es el **HTML5**
 
-# CSS
+### CSS
 
 Las hojas de estilos en cascada, es otro lenguaje de marcas, pero de estilos utilizados para proporcionar propiedades a los
 elementos de un HTML, este es un lenguaje basico que se utiliza para asi personalizar los elementos
 que tenemos en el HTML podemos escribirlos directamente con la propiedad "style", dentro del HTML
 o hacerlo enlazando una hoja".css" al HTML y asignar las personalizaciones desde ese enlace.
 
-# Sencilla Aplicación Web combinando HTML, CSS y JS
+### Sencilla Aplicación Web combinando HTML, CSS y JS
