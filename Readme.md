@@ -328,4 +328,3 @@ que tenemos en el HTML podemos escribirlos directamente con la propiedad "style"
 o hacerlo enlazando una hoja".css" al HTML y asignar las personalizaciones desde ese enlace.
 
 # Sencilla Aplicación Web combinando HTML, CSS y JS
-    
