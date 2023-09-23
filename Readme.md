@@ -230,7 +230,7 @@ de páginas SPA).
 
 Este es muy útil y usa en la manipulación del DOM y el manejo de eventos, animaciones y efectos.
 
-![TUC](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnOERRdJZSEYeeGJ1s0ReOwaWV0iC2Ra1faqhFZyp12KiFbIYG6REl3a7bQWy8CObCvc&usqp=CAU)
+![TUC](https://www.zdnet.com/a/img/resize/ffd33e4f96d86823328a1360e6321e0f9c5318c9/2019/04/21/9d791bf2-9b20-476a-bba6-201e622d2a1f/jquery-logo-blue.png?auto=webp&width=1024)
 
 ### Angular.JS
 
@@ -256,7 +256,7 @@ de JavaScript, gracias ello podemos combinar la lógica interfaz de usuario con 
 
 El uso de JSX no es obligatorio en React, pero facilita mucho su uso.
 
-![TUC](https://www.google.com/search?q=react&sca_esv=567894573&rlz=1C1YTUH_esES1076ES1076&sxsrf=AM9HkKkC3XikRJq-GnBV44z_BhTDzzQZ7w:1695504387023&tbm=isch&source=iu&ictx=1&vet=1&fir=4fP0joQQKRm5dM%252Cf37ex3LPb9a9oM%252C%252Fm%252F012l1vxv%253BVSkyWs8tDmynMM%252ClWgQ8RSs-vpqzM%252C_%253B_QvrPoNmxytTeM%252CJL3zwcFL7TH6BM%252C_%253BeRJuR9ugQmePkM%252C_SU9oiSMtPBR-M%252C_%253BX_mEpETNZWn7-M%252CmM1BU1-EasHt2M%252C_&usg=AI4_-kSwSIgEazUH3ur1C6l5Ibu6n2d9Aw&sa=X&ved=2ahUKEwj6k9CF1sGBAxWKXaQEHSecBPAQ_B16BAhJEAE#imgrc=4fP0joQQKRm5dM)
+![TUC](https://blog.cellenza.com/wp-content/uploads/2015/05/React-JS-1024x584.png)
 
 ### Node.js
 
@@ -268,7 +268,7 @@ Por decirle de alguna forma, se puede decir que Node.js es un JavaScript sacado 
 
 Su uso más habitual es en el desarrollo de servicios web.
 
-![TUC](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.muylinux.com%2Fwp-content%2Fuploads%2F2022%2F04%2Fnodejs.png&tbnid=0cR72ir89_N2EM&vet=10CBAQxiAoA2oXChMIiJyeltnBgQMVAAAAAB0AAAAAEAY..i&imgrefurl=https%3A%2F%2Fwww.muylinux.com%2F2022%2F04%2F27%2Fnodejs-18%2F&docid=Gkm0dcMeylemdM&w=1200&h=720&itg=1&q=node%20js&ved=0CBAQxiAoA2oXChMIiJyeltnBgQMVAAAAAB0AAAAAEAY)
+![TUC](https://www.muylinux.com/wp-content/uploads/2022/04/nodejs.png)
 
 ## Características de los Lenguajes de Script. Ventajas y Desventajas
 
