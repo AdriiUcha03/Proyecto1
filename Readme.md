@@ -328,3 +328,138 @@ que tenemos en el HTML podemos escribirlos directamente con la propiedad "style"
 o hacerlo enlazando una hoja".css" al HTML y asignar las personalizaciones desde ese enlace.
 
 ### Sencilla Aplicación Web combinando HTML, CSS y JS
+
+Vamos a ver una sencilla aplicación de un Juego Básico de adivinar un número secreto
+en el que utilizaremos HTML para crear los elementos con los que jugaremos, css para
+decorar un poco el juego y JS para recoger los valores e ir chequeando si acertamos el valor, una vez se 
+averigua, el script printeara los valores introducidos con el número de intentos:
+
+**Código del HTML:**
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Juego del Número secreto</title>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>JUEGO DEL NÚMERO SECRETO</h1>
+        <button type="submit" onclick="numSecreto()">JUGAR</button>
+        <p><small>Pulsa 3 veces ESC para salir del juego una vez inciado.</small></p>
+    </body>
+    </html>
+
+**Código del CSS:**
+    
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+    h1 {
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;  
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    button:hover {
+    background-color: #0056b3;
+    }
+
+    p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    }
+
+    small {
+    color: #999;
+    }
+
+**Código del Script**
+    
+    function numSecreto(){
+    // calculamos el número secreto
+    var numSecreto=Math.round(Math.random()*100+1) // esto nos puede obtener un número entre 1 y 100
+    var numInferior=0
+    var numSuperior=100; // número entre los que va estar el número que buscamos
+    // la primera vez entre 0 y 100
+    var numVeces=0; // número de intentos para descubrir el número
+    var numUsuario=0;
+    // definimos un array para meter los números
+    var numLista = new Array(100); //utilizamos un object
+
+    function finalizar(){
+        alert('Se a parado el juego.')
+        document.write("<br><hr><br> EL NUMERO ERA: " + numSecreto + "</br>")
+        document.write("<br><hr><br> LISTADO DE LA TABLA CON VALORES</br>")
+        for (var i=0; i<=numVeces; i++){
+            var contenido=numLista[i]; // pasamos el contenido a una variable
+            document.write("Elemento "+i+" con contenido "+contenido+" <br>"); // mostramos la lista
+        }
+    }
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            finalizar();
+        }
+      });
+
+    while (numSecreto!=numUsuario){
+        document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            finalizar();
+        }
+      });
+        // pedimos al usuario un número entre los márgenes inferior y superior
+        var numUsuario1=prompt("Introduzca el número entre"+numInferior+" y "+numSuperior);
+        var letras = array = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','w','v','y','z',
+                     'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','W','V','Y','Z']
+
+        if (numUsuario1 === null){
+            alert('No has introducido un valor')
+            return;
+        } else if (letras.includes(numUsuario1)){
+            alert('No has introducido un número')
+            return;
+        }else{
+            numUsuario=parseInt(numUsuario1);
+            numLista[numVeces] = numUsuario; // metemos los valores en la lista
+            numVeces++; //incrementamos el número de intentos
+            if (numUsuario>numSuperior){
+                alert('El valor es mator al máx')
+            }else if(numUsuario<numInferior){
+                alert('El valor es menor al min')
+            }else if (numUsuario>numSecreto){ // el número del usuario es mayor al valor del número buscado
+            // en este caso el numero mayor es el que ha metido el usuario
+            numSuperior=numUsuario;
+            }else {
+            numInferior=numUsuario; // el número del usuario es menor que el superior, es decir está entre ambos
+            }
+        }
+    }
+    document.write(" Has adivinado el número en "+numVeces+" veces y el número secreto era "+numSecreto);
+        numVeces--; // hemos contado una demás
+        // listamos el contenido de la lista
+        document.write("<br><hr><br> LISTADO DE LA TABLA CON VALORES</br>")
+        for (var i=0; i<=numVeces; i++){
+            var contenido=numLista[i]; // pasamos el contenido a una variable
+            document.write("Elemento "+i+" con contenido "+contenido+" <br>"); // mostramos la lista
+        }
+    }
+
+Adjunto los ficheros individuales para descargar, **importante que esten juntos en la misma carpeta**
