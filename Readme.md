@@ -296,12 +296,36 @@ tradicionales.
 En resumen:
 Claro, aquí tienes la información en una tabla Markdown:
 
-| Lenguajes de scripting                | Lenguajes de programación            |
-|---------------------------------------|--------------------------------------|
-| Específicos de plataforma             | Independientes de la plataforma      |
-| (Mayoritariamente) interpretado       | Compilado                            |
-| Más lento en tiempo de ejecución      | Más rápido en tiempo de ejecución    |
-| Menos intensivo en código             | Más intensivo en código              |
-| Crea aplicaciones como parte de un stack | Crea aplicaciones independientes     |
+| **Lenguajes de scripting**               | **Lenguajes de programación**     |
+|------------------------------------------|-----------------------------------|
+| Específicos de plataforma                | Independientes de la plataforma   |
+| (Mayoritariamente) interpretado          | Compilado                         |
+| Más lento en tiempo de ejecución         | Más rápido en tiempo de ejecución |
+| Menos intensivo en código                | Más intensivo en código           |
+| Crea aplicaciones como parte de un stack | Crea aplicaciones independientes  |
 
 ## Tecnologías y Lenguajes Asociados. Integración del Código con las Etiquetas HTML:
+
+# HTML
+
+El Lenguaje de Marcas de Hipertexto, es el componente más basico de las webs, este define el significado y la estructura
+del contenido que se va a añadir a la web.
+
+Hipertexto hace referencia a los enlaces que conectan las páginas web entre sí que es lo que suelen ver los usuarios,
+además de que los enlaces son fundamentales en las webs.
+
+Este lenguaje de marcas utiliza ya como su tipo de lenguaje indica, marcas para etiquetar texto y darle propiedades a las
+cosas y así mostrar contenido en el navegador web, estas marcas incluyen los elementos que se representan mediante las
+famosas etiquetas **< >**, que ya comentamos anteriormente.
+
+Actualmente, el último estándar de HTML es el **HTML5**
+
+# CSS
+
+Las hojas de estilos en cascada, es otro lenguaje de marcas, pero de estilos utilizados para proporcionar propiedades a los
+elementos de un HTML, este es un lenguaje basico que se utiliza para asi personalizar los elementos
+que tenemos en el HTML podemos escribirlos directamente con la propiedad "style", dentro del HTML
+o hacerlo enlazando una hoja".css" al HTML y asignar las personalizaciones desde ese enlace.
+
+# Sencilla Aplicación Web combinando HTML, CSS y JS
+    
