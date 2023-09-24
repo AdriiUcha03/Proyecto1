@@ -2,7 +2,19 @@
 
 ---
 
-A día de hoy ell mundo se ha traslado a internet, y las aplicaciones web son nuevos lugares de trabajo, y páginas comerciales, 
+# Índice
+
+1. [Modelos de Programación en Entornos Cliente/Servidor](#modelos-de-programación-en-entornos-clienteservidor)
+2. [Tipos de Arquitecturas de Aplicaciones Web](#tipos-de-arquitecturas-de-aplicaciones-web)
+3. [Mecanismos de Ejecución de Código en un Navegador Web. Capacidades y Limitaciones. Compatibilidad con Navegadores](#mecanismos-de-ejecución-de-código-en-un-navegador-web-capacidades-y-limitaciones-compatibilidad-con-navegadores)
+4. [Lenguajes de Programación en Entorno Cliente](#lenguajes-de-programación-en-entorno-cliente)
+5. [Características de los Lenguajes de Script. Ventajas y Desventajas](#características-de-los-lenguajes-de-script-ventajas-y-desventajas)
+6. [Tecnologías y Lenguajes Asociados. Integración del Código con las Etiquetas HTML](#tecnologías-y-lenguajes-asociados-integración-del-código-con-las-etiquetas-html)
+7. [Herramientas de Programación](#herramientas-de-programación)
+
+---
+
+A día de hoy el mundo se ha traslado a internet, y las aplicaciones web son nuevos lugares de trabajo, y páginas comerciales, 
 hay muchos tipos de páginas web según su funcionalidad y uso, por lo tanto, tenemos diferentes tipos de arquitecturas con las
 que podemos ofrecer un alto rendimiento y personalización.
 
@@ -19,7 +31,7 @@ La forma en la que diseñamos una aplicación web es clave en su usabilidad y ta
 
 ## Modelos de Programación en Entornos Cliente/Servidor:
 
-La arquitectura de las aplicaciones web define cómo se estructuran los componentes de una aplicacion que se basa en la 
+La arquitectura de las aplicaciones web define cómo se estructuran los componentes de una aplicación que se basa en la 
 web, las arquitecturas son muy específicas basándonos en el propósito de la aplicación web. Utilizar correctamente una 
 arquitectura web nos puede dar ciertos beneficios.
 - **Un Desarrollo Organizado;** ya que así podemos aislar componentes según sea necesario, y puedes elegir una estructura 
@@ -36,7 +48,7 @@ desarrollar la página con mucha más comodidad o en paralelo con más compañer
 Algunos tipos de Arquitectura Web son los siguientes:
 
 ### *Arquitectura de Una Sola Página*
-La arquitectura SPA es bastante sencilla, toda la aplicación se basa en una sola página, una vez el usuario entra en la aplicación
+La **arquitectura SPA** es bastante sencilla, toda la aplicación se basa en una sola página, una vez el usuario entra en la aplicación
 no necesita desplazarse a ninguna otra página web. Estas son bastante útiles cuando se trata de ofrecer una experiencia
 rápida y sin fisuras a los usuarios finales o consumidores, pero carecen del toque de un sitio web tradicional, estas pueden
 ser difíciles de optimizar para el SEO.
@@ -46,7 +58,7 @@ ser difíciles de optimizar para el SEO.
 Algunos de sus usos son aplicaciones como **Gmail, Facebook o GitHub** 
 
 ### *Arquitectura de Renderizado del Lado del Servidor*
-En la arquitectura SSR, las páginas web del frontend se renderizan en un servidor backend después de ser solicitadas por
+En la **arquitectura SSR**, las páginas web del frontend se renderizan en un servidor backend después de ser solicitadas por
 el usuario, esto para reducir la carga del cliente, ya que recibe una página web estática de *HTML, CSS y JS*.
 Estas son populares entre los blogs y sitios web de comercio electrónico, porque la gestión de enlaces y el SEO son bastante sencillos, además
 de tener un tiempo de respuesta en carga bastante rapido, porque el cliente no tiene que cargar nada.
@@ -66,14 +78,14 @@ el tiempo de la construcción de la aplicación, ya que se renderizan durante la
 Esta se utiliza en sitios webs de **noticias y blogs**, también para sitios de **documentación técnica**
 
 ### *Arquitectura de Aplicaciones Isomórficas*
-Esta es una mezcla de aplicaciones creadas con SSR y SPA, estas aplicaciones se renderizan primero en el servidor, como una
+Esta es una **mezcla de aplicaciones creadas con SSR y SPA**, estas aplicaciones se renderizan primero en el servidor, como una
 SSR normal y corriente, una vez las recibe el cliente, la app carga el DOM virtual para un procesamiento rápido y eficiente
 por parte del cliente, esto la convierte en una SPA, con ella tienes un renderizado rapido, y un soporte de SEO y enlaces completo.
 
 Esta arquitectura se utiliza en aplicaciónes como **Pinterest, Twitter, Uber**
 
 ### *Arquitectura Orientada a Servicios*
-En esta arquitectura las aplicaciones web se dividen en servicios que representa una unidad funcional cada uno, estos servicios están
+En esta arquitectura las aplicaciones web se dividen en **servicios** que representa una unidad funcional cada uno, estos servicios están
 acoplados e interactuan entre sí mediante el paso de mensajes.
 Esta arquitectura orientada a servicios añade estabilidad y escalabilidad a la aplicación, pero no tienen un tamaño y alcance fijos,
 por lo que puede ser complicada para el mantenimiento.
@@ -83,7 +95,7 @@ por lo que puede ser complicada para el mantenimiento.
 Algunas aplicaciones que utilizan esta estructura son **Amazon(AWS), Google Maps, Spotify**
 
 ### *Arquitectura de Microsevicios*
-Esta fue diseñada para resolver los problemas de la Arquitectura Orientada a Servicios, estas son más modulares y 
+Esta fue diseñada para resolver los **problemas de la Arquitectura Orientada a Servicios**, estas son más modulares y 
 encajan entre sí para construir una aplicación web, son pequeñas y con un contexto limitado, esta es la mejor estructura 
 para aplicaciones que pretenden llevar a muchos usuarios, ya que son escalables y fácil de mantener, para proyectos 
 pequeños puede requerir demasiado esfuerzo de mantenimiento.
@@ -93,7 +105,7 @@ pequeños puede requerir demasiado esfuerzo de mantenimiento.
 Algunas aplicaciones como **Linkedin, SoundCloud, Zuul(Servicio de Netflix)** utilizan esta estructura.
 
 ### *Arquitectura sin Servidor*
-Esta arquitectura se centra en que tu aplicación se base en términos de funciones que debe realizar, son funciones que 
+Esta arquitectura se centra en que tu aplicación se base en **términos de funciones** que debe realizar, son funciones que 
 se invocan según la llegada de las solicitudes, estas arquitecturas no permanecen en funcionamiento todo el tiempo, se 
 comportan como lo harían las funciones de un programa según lo que acciones reacciona, reduce los costes de mantenimiento 
 y son fácil de escalar sin mucho esfuerzo, pero es difícil llevar a cabo tareas de larga duración utilizando estos 
@@ -120,7 +132,7 @@ en una página web al aplicarse en un documento HTML, este funciona de la siguie
 de registrar callbacks, clics de botón y funciones según eventos que se realicen en la página.
 6. Se produce el ciclo de eventos según la interactividad de la página el código lanza funciones o eventos.
 
-Además, JavaScript es el **unico** lenguaje que realmente entienden los navegadores modernos, tenemos lenguajes como TypeScript
+Además, JavaScript es el **único** lenguaje que realmente entienden los navegadores modernos, tenemos lenguajes como TypeScript
 compilan a JS, pero te permiten desarrollar en otro lenguaje, al final lo que lee
 el navegador sigue siendo JS.
 
@@ -139,16 +151,15 @@ el navegador sigue siendo JS.
 
 ### Compatibilidad entre navegadores
 
-Es importante saber que JavaScript es interpretado de diferente manera en el navegador, es decir cada uno lo lee a su 
+Es importante saber que JavaScript es interpretado de **diferente manera en el navegador**, es decir cada uno lo lee a su 
 manera, al principio la compatibilidad entre los navegadores era muy baja poco a poco ha ido creciendo más, a día de hoy,
-ya pasa mucho menos, pero seguimos teniendo estos problemas de compatibilidad,
-hace unos 10 años era necesario crear códigos diferentes para cada navegador, esto generaba una carga de trabajo mucho 
-a la de hoy en día.
+ya pasa mucho menos, pero seguimos teniendo estos problemas de compatibilidad, hace unos 10 años era necesario crear 
+códigos diferentes para cada navegador, esto generaba una carga de trabajo mucho mayor.
 
 Hay día de hoy es más compatible, pero seguimos teniendo muchas funciones que son diferentes en cada navegador por lo que 
 lo correcto es probar en todos los navegadores y asegurarnos de que funcionan correctamente en todos, el problema es que
-existen muchos navegadores un web para comprobar la compatibilidad con todo es ***[Can I Use](https://caniuse.com/)***, 
-no solo para comprobar JS, también para comprobar HTML5 y CSS3 es muy util, ya que también encontramos diferencias de este
+existen muchos navegadores web para comprobar la compatibilidad con todo es ***[Can I Use](https://caniuse.com/)***, 
+no solo para comprobar JS, también para comprobar HTML5 y CSS3 es muy útil, ya que también encontramos diferencias de este
 tipo en los lenguajes de marcas, podemos comparar con todo tipo de versiones de navegador.
 
 También es importante tener en cuenta que cuando hacemos una web no hay que darle soporte a todos los navegadores, ya que
@@ -157,7 +168,7 @@ existen demasiados, sino a los más grandes que ocupan el uso de la mayoría de 
 
 ### Resolución de problemas de compatibilidad en una Aplicación Web
 
-Es muy importante testear la compatibilidad de la que hablamos para asegurarnos de que en diferentes dispositivos y 
+Es muy importante **testear la compatibilidad** de la que hablamos para asegurarnos de que en diferentes dispositivos y 
 navegadores funciona correctamente todo y cumple las expectativas de lo esperado, este tipo de testeos y comprobaciones 
 debemos de realizarlas cuando hagamos proyectos web para todo el mundo y no dirigido a un sistema o equipos en concreto,
 ya que si es por ejemplo para una empresa que tiene todo el sistema igual, pues no es necesario entonces nos debemos de
@@ -171,15 +182,15 @@ porque sacamos la aplicación a prueba de errores de cualquier navegador.
 y reducir costes.
 
 Qué tipos de pruebas podemos realizar para comprobar la compatibilidad:
-- Pruebas de compatibilidad con versiones anteriores.
-- Pruebas Generales de compatibilidad.
-- Pruebas de compatibilidad móvil.
-- Pruebas de compatibilidad en dispositivos variados.
-- Pruebas de compatibilidad de hardware.
-- Pruebas funcionales de red.
+- **Pruebas de compatibilidad** con versiones anteriores.
+- **Pruebas Generales** de compatibilidad.
+- Pruebas de compatibilidad **móvil**.
+- Pruebas de compatibilidad en **dispositivos variados**.
+- Pruebas de compatibilidad de **hardware**.
+- Pruebas **funcionales de red**.
 
 Una vez testeado y encontrado los problemas tendremos que ir modificando y resolviendo todos los problemas de compatibilidad
-por eso es muy util tener un buen plan de control de versiones y repositorios en los que tener todo organizado con las 
+por eso es muy util tener un buen plan de **control de versiones y repositorios** en los que tener todo organizado con las 
 modificaciones que se vayan haciendo.
 
 ## Lenguajes de Programación en Entorno Cliente
@@ -203,7 +214,7 @@ muy diferentes.
 
 ### TypeScript
 
-TypeScript es un lenguaje de programación desarrollado por Microsoft que está construido a base de JavaScript, pero
+**[TypeScript](https://www.typescriptlang.org/)** es un lenguaje de programación desarrollado por Microsoft que está construido a base de JavaScript, pero
 este está construido a un nivel superior, es decir este tiene características adicionales que nos facilitan la vida al 
 escribir código a los programadores, su sintaxis es orientada a objetos.
 
@@ -220,7 +231,7 @@ TypeScript se utiliza para todo en general, desarrollo web, de aplicaciones móv
 
 ### jQuery
 
-jQuery es una librería para JavaScript desarrollada en 2006 que nos permite simplificar la forma en la que accedemos al DOM,
+**[jQuery](https://jquery.com/)** es una librería para JavaScript desarrollada en 2006 que nos permite simplificar la forma en la que accedemos al DOM,
 nos permite añadir una capa de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando los 
 eventos que suceden ella, creando animaciones y efectos para enriquecer la experiencia del usuario.
 
@@ -234,7 +245,7 @@ Este es muy útil y usa en la manipulación del DOM y el manejo de eventos, anim
 
 ### Angular.JS
 
-Angular es un framework mantenido por Google, que sirve para desarrollar aplicaciones web de estilo SPA o de tipo
+**[Angular](https://angular.io/)** es un framework mantenido por Google, que sirve para desarrollar aplicaciones web de estilo SPA o de tipo
 web progresivas PWA, sirve para tanto móvil como ordenador.
 
 Es un poco complejo y su desarrollo se realiza por medio de TypeScript o JavaScript.
@@ -247,7 +258,7 @@ optimización de rendimiento y de SEO y muchas más cosas.
 
 ### React.JS
 
-React es otra biblioteca de JavaScript que utiliza para hacer interfaces de usuario, todas las aplicaciones de react se componen
+**[React](https://es.react.dev/)** es otra biblioteca de JavaScript que utiliza para hacer interfaces de usuario, todas las aplicaciones de react se componen
 de componentes reutilizables que forman la interfaz del usuario, el poder reutilizar dicho código nos puede facilitar 
 a la hora de hacer una web, ya que solo tenemos que ponerlo donde nos haga falta y ya.
 
@@ -260,7 +271,7 @@ El uso de JSX no es obligatorio en React, pero facilita mucho su uso.
 
 ### Node.js
 
-Node es una plataforma de ejecución de JavaScript de propósito general, con ella puedes ejecutar JavaScript
+**[Node](https://nodejs.org/es)** es una plataforma de ejecución de JavaScript de propósito general, con ella puedes ejecutar JavaScript
 fuera del navegador y crear programas de consola servicios web, interfaces gráficas y mucho más, básicamente con ella
 podemos sacar JavaScript del entorno cliente en navegadores y darle otra utilidad diferente a la habitual.
 
@@ -280,7 +291,7 @@ Los lenguajes de script tienen una serie de características:
 - Su código es simple, los scripts pueden verse complicados, pero realmente son muchos trozos de código pequeño que se 
 unen y forman uno más grande.
 
-Estos son muy utiles tanto para programadores de software como desarrolladores web.
+Estos son muy útiles tanto para programadores de software como desarrolladores web.
 
 Las diferencias entre los lenguajes de scripting y los de compilación son las siguientes:
 - Los lenguajes de scripting son específicos para una plataforma, en cambio, los tradicionales funcionan en cualquiera generalmente.
@@ -308,7 +319,7 @@ Claro, aquí tienes la información en una tabla Markdown:
 
 ### HTML
 
-El Lenguaje de Marcas de Hipertexto, es el componente más basico de las webs, este define el significado y la estructura
+El **Lenguaje de Marcas de Hipertexto**, es el componente más básico de las webs, este define el significado y la estructura
 del contenido que se va a añadir a la web.
 
 Hipertexto hace referencia a los enlaces que conectan las páginas web entre sí que es lo que suelen ver los usuarios,
@@ -320,16 +331,20 @@ famosas etiquetas **< >**, que ya comentamos anteriormente.
 
 Actualmente, el último estándar de HTML es el **HTML5**
 
+![TUC](https://cms.rootstack.com/sites/default/files/inline-images/23-237381_java-html-language-logo-png-transparent-png.png)
+
 ### CSS
 
-Las hojas de estilos en cascada, es otro lenguaje de marcas, pero de estilos utilizados para proporcionar propiedades a los
+Las hojas de **estilos en cascada**, es otro lenguaje de marcas, pero de estilos utilizados para proporcionar propiedades a los
 elementos de un HTML, este es un lenguaje basico que se utiliza para asi personalizar los elementos
 que tenemos en el HTML podemos escribirlos directamente con la propiedad "style", dentro del HTML
 o hacerlo enlazando una hoja".css" al HTML y asignar las personalizaciones desde ese enlace.
 
+![TUC](https://1000marcas.net/wp-content/uploads/2021/02/CSS-Logo.jpg)
+
 ### Sencilla Aplicación Web combinando HTML, CSS y JS
 
-Vamos a ver una sencilla aplicación de un Juego Básico de adivinar un número secreto
+Vamos a ver una sencilla aplicación de un *Juego Básico de adivinar un número secreto*
 en el que utilizaremos HTML para crear los elementos con los que jugaremos, css para
 decorar un poco el juego y JS para recoger los valores e ir chequeando si acertamos el valor, una vez se 
 averigua, el script printeara los valores introducidos con el número de intentos:
@@ -463,3 +478,66 @@ averigua, el script printeara los valores introducidos con el número de intento
     }
 
 Adjunto los ficheros individuales para descargar, **importante que esten juntos en la misma carpeta**
+
+## Herramientas de Programación
+
+Podemos hacer código en un archivo de texto con la extensión correcta, pero esto se nos hace muy incómodo y complicado
+a día de hoy tenemos muchas herramientas que nos facilitan muchas cosas a la hora de programar, vamos a ver algunas de
+ellas.
+
+### Visual Studio Code
+Este es un **editor desarrollado por Microsoft** para todas las plataformas, es de código abierto y gratuito.
+
+Este se basa en Electron, un framework que se utiliza para implementar Chromium y Node.js, como aplicaciones de 
+escritorio, que se ejecuta en un motor de diseño Blink, junto con Visual Studio Team Services.
+
+En este podemos desarrollar código ver errores ejecutar programas y testearlos, en general vale para casi todos los
+lenguajes de programación. Podemos instalar extensiones para poder personalizarlo y añadirle las funciones extras que 
+queramos a nuestro gusto.
+
+Tiene autocompletación de código para CSS, HTML JS, JSON, Less, Sass, TypeScript
+
+![TUC](https://code.visualstudio.com/assets/docs/languages/typescript/overview.png)
+
+### Chrome Devtools
+
+Es un **conjunto de herramientas** que nos ayudan para desarrollar programas web, nos ayuda a representar
+de una forma mucha más clara el código de una página web, lo utilizan la mayoría de desarrolladores,
+sobre todo se utiliza en HTML, CSS o JavaScript.
+
+Este es desarrollado por google y lo podemos utilizar en nuestro navegador.
+
+![TUC](https://nira.com/wp-content/uploads/2020/03/chrome-dev-tools.png)
+
+
+### WEBSTORM
+Un **IDE especializado en JavaScript**, en este también podemos crear código de HTML y CSS y combinarlos
+con el de JS.
+- Tiene un asistente de código que te corrige errores y es muy intuitivo.
+- Permite trabajar con los frameworks actuales como Angular, React...
+- Es un editor sencillo y muy fácil de usar
+- Además, nos permite realizar Debugging para ver paso a paso como se ejecutan las cosas, y testear las cosas que creamos.
+- Este nos ayuda también a simplificar código y que sea mas eficiente.
+
+![TUC](https://www.jetbrains.com/webstorm/img/overview/webstorm-overview.png)
+
+---
+
+# Bibliografía
+- [Tipos de Arquitecturas Web Cliente Servidor](https://kinsta.com/es/blog/arquitectura-aplicaciones-web/#ventajas-de-la-arquitectura-spa)
+- [Ejecución de JavaScript en Navegadores](https://blog.hubspot.es/website/que-es-javascript#como-funciona)
+- [Compatibilidad de Java Script en navegadores](https://www.edgardandrea.com/javascript-es-igualmente-compatible-en-todos-los-navegadores/)
+- [Resolución de problemas](https://www.zaptest.com/es/pruebas-de-compatibilidad-que-son-tipos-proceso-caracteristicas-herramientas-y-mucho-mas)
+- [JAVASCRIPT](https://developer.mozilla.org/es/docs/Web/JavaScript)
+- [TYPESCRIPT](https://profile.es/blog/que-es-typescript-vs-javascript/)
+- [JQUERY](https://openwebinars.net/blog/que-es-jquery/)
+- [ANGULAR](https://blog.hubspot.es/website/que-es-angular#:~:text=Angular%20es%20un%20framework%20de,versiones%20m%C3%B3viles%20como%20de%20escritorio)
+- [REACT](https://kinsta.com/es/base-de-conocimiento/que-es-react-js/)
+- [NODE.JS](https://desarrolloweb.com/home/nodejs)
+- [Características de los lenguajes de Script](https://www.hostingplus.com.es/blog/estos-son-los-lenguajes-de-programacion-mas-destacables-de-script/)
+- [Diferencias](https://kinsta.com/es/blog/lenguajes-script/#lenguajes-de-scripting-vs-lenguajes-de-programacin)
+- [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [VS CODE](https://es.wikipedia.org/wiki/Visual_Studio_Code)
+- [Chrome DEVTOOLS]()
+- [WEBSTORM](https://keepcoding.io/blog/para-que-sirve-devtools/)
