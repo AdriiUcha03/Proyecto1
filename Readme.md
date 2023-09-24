@@ -539,5 +539,5 @@ con el de JS.
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [VS CODE](https://es.wikipedia.org/wiki/Visual_Studio_Code)
-- [Chrome DEVTOOLS]()
-- [WEBSTORM](https://keepcoding.io/blog/para-que-sirve-devtools/)
+- [Chrome DEVTOOLS](https://keepcoding.io/blog/para-que-sirve-devtools/)
+- [WEBSTORM](https://www.componentsource.com/es/product/webstorm/about)
